@@ -1,0 +1,99 @@
+.sign-in-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h2 {
+    color: #f02d2d;
+    margin: 0;
+  }
+  
+  .sign-in-form p:first-of-type {
+    color: #a39d9d;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .options input[type="checkbox"] {
+    accent-color: #f02d2d;
+  }
+  
+  .options a {
+    color: #f02d2d;
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: #f02d2d;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .not-registered-text {
+    color: gray;
+  }
+  
+  .create-account-link {
+    color: #f02d2d;
+    text-decoration: none;
+  }
+  
+  .separator {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .separator::before, .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .separator span {
+    margin: 0 1rem;
+    color: #a39d9d;
+  }
+  
+  /* Styling to display 'Not registered yet?' and 'Create an Account' on the same line */
+  .not-registered {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .not-registered-text {
+    margin-right: 0.5rem;
+  }
+  

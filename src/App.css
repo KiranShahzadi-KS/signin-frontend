@@ -1,0 +1,108 @@
+/* Set up the main container and sections */
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.sign-in-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.promo-section {
+  flex: 1;
+  background-color: #f02d2d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .sign-in-section, .promo-section {
+    flex: none; 
+    width: 100%;
+    padding: 1rem; 
+  }
+
+  /* Sign In Form */
+  .sign-in-form {
+    max-width: 100%;
+    padding: 1rem; 
+  }
+
+  /* Promo Section */
+  .promo-content p {
+    min-width: auto; 
+    font-size: 1rem;
+  }
+
+  .logo button {
+    min-width: 100%; 
+    font-size: 1.5rem; 
+  }
+
+  /* Adjust input fields in the form */
+  input {
+    padding: 0.6rem;
+    font-size: 0.9rem; 
+  }
+
+  button {
+    padding: 0.6rem;
+    font-size: 1rem; 
+  }
+
+  /* Adjust separator */
+  .separator {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .separator span {
+    margin: 0 0.5rem;
+  }
+
+  /* Adjust links and buttons for better accessibility */
+  .options a {
+    font-size: 0.9rem;
+  }
+
+  .not-registered {
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .not-registered-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .create-account-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional Media Query for very small screens (mobile phones in portrait mode) */
+@media (max-width: 480px) {
+  .logo button {
+    font-size: 1.2rem; 
+  }
+
+  p {
+    font-size: 0.9rem; 
+  }
+}
